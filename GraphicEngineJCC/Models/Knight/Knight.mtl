@@ -1,0 +1,12 @@
+newmtl Armor_Mat
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Ka Armor_Mat_AO.png
+map_Kd Armor_Mat_albedo.png
+norm Armor_Mat_Normal.png
+map_Pm Armor_Mat_metallic.png
+map_Pr Armor_Mat_roughness.png

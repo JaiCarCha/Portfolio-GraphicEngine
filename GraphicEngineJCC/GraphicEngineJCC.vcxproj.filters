@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx;vert;frag</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\FragmentShaders">
+      <UniqueIdentifier>{b328cb28-2c1d-4495-9401-0f896bba199c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VertexShaders">
+      <UniqueIdentifier>{5677a2af-35eb-423f-9f28-d3fb80fa711f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="STB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeferredShading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VertexShader.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="VertexShaderColors.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="VertexShaderCube.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="VertexShaderTexture.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="VertexShaderTextureAndNormals.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="vsCubemap.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="vsFrameBuffer.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="fsStencilOutline.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsAlpha.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsCubemap.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsDepthBuffer.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsFrameBuffer.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsGlass.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsStandard.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="vsMirror.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="fsMirror.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="vsStandard.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="vsNormalDebug.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="gsNormalDebug.geom">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="fsNormalDebug.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="vsShadowMap.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="fsEmpty.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsLinearDepth.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="gsShadowCubemap.geom">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="vsShadowCubemap.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="fsGaussianBlur.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsGBuffer.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsStandardDeferred.frag">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="vsGBuffer.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="vsStandardDeferred.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="vsQuad.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="fsSSAO.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsSSAOBlur.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsPBR.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="vsCubemapConversion.vert">
+      <Filter>Source Files\VertexShaders</Filter>
+    </None>
+    <None Include="fsCubemapConversion.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsCubemapConvolution.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsPrefilterCubemap.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsBrdfLUT.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+    <None Include="fsQuad.frag">
+      <Filter>Source Files\FragmentShaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Framebuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cubemap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Planet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawableObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeferredShading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SSAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FramebufferDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="textures\wall.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\awesomeface.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
