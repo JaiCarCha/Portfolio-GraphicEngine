@@ -26,9 +26,7 @@ class Shader
 private:
     int materialTextureUnit = 0;    // 0 - 6 textures: diff/base, specular/metalic, gloss/roughness, height, normal, ao...
     int cubemapTextureUnit = 15;     // 7 - 9 textures: 7 = irradiance map, 8 = pre-filter cubemap, 9 = BRDF LUT
-    //int cubemapTextureUnit = 7;     // 7 - 9 textures: 7 = irradiance map, 8 = pre-filter cubemap, 9 = BRDF LUT
     int shadowMapTextureUnit = 18;  // 10 - 32 textures: / 10 direct / 11 - 20 spot / 21 - 32 point /
-    //int shadowMapTextureUnit = 10;  // 10 - 32 textures: / 10 direct / 11 - 20 spot / 21 - 32 point /
 
     string shaderFolder = "Shaders/";
 

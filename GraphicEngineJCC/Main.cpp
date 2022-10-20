@@ -9,8 +9,6 @@
 #include "LightBase.h"
 #include "DrawableObject.h"
 #include "DeferredShading.h"
-//#include "SSAO.h"
-
 #include "Shape.h"
 #include "Mesh.h"
 #include "Model.h"
@@ -19,7 +17,6 @@
 #include "Cubemap.h"
 #include "ShadowMap.h"
 #include "Scene.h"
-
 #include "assimp/Importer.hpp"
 #include "assimp/scene.h"
 #include "assimp/postprocess.h"
@@ -59,7 +56,6 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 
 	// Set the viewport size with the new width and height if the window size change
 	glViewport(0, 0, width, height);
-	//cout << "FRAMEBUFFER CALLBACK" << endl;
 }
 
 void mouse_callback(GLFWwindow* window, double xpos, double ypos)
@@ -76,7 +72,7 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos)
 	float yoffset = lastY - ypos; // Inverted: Y ranges bottom to top
 	lastX = xpos;
 	lastY = ypos;
-	//cout << xoffset << " " << yoffset << endl;
+
 	camera->cameraMouse(xoffset, yoffset);
 }
 
@@ -359,7 +355,7 @@ vector<DrawableObject*> generateSceneObjects()
 {
 	vector<DrawableObject*> sceneObj;
 
-	// Model
+	// Models
 	DrawableObject* model1 = Scene::createModel("Models/Camera/Camera.obj");
 	model1->transformation.translation = vec3(0.f, -1.f, 0.f);
 
@@ -490,17 +486,6 @@ void drawScene(Shader& sh, vector<DrawableObject*> obj, DirectionalLight dLight,
 
 int main()
 {
-	/*
-	*  // Getting OpenGL functions witout GLAD //
-	* 
-	// define the function’s prototype
-	typedef void (*GL_GENBUFFERS) (GLsizei, GLuint*); // Pointer to function type
-	// find the function and assign it to a function pointer
-	GL_GENBUFFERS glGenBuffers = (GL_GENBUFFERS)wglGetProcAddress("glGenBuffers");
-	// function can now be called as normal
-	unsigned int buffer;
-	glGenBuffers(1, &buffer);
-	*/
 
 	GLFWwindow* window;
 	if (glfwConfig(window) == -1) return -1;
@@ -528,10 +513,8 @@ int main()
 	//Shader shader("vsStandard.vert", "fsStandard.frag", "", defineValues);
 	Shader shader("vsStandard.vert", "fsPBR.frag", "", defineValues);
 
-	//Scene::createSkybox("textures/space/");
 	Scene::createSkybox("textures/Arches_E_PineTree_3k.hdr", ".hdr");
 	Scene::createSkybox("textures/Ice_Lake_Ref.hdr", ".hdr");
-	//Scene::createSkybox("textures/Alexs_Apt_2k.hdr", ".hdr");
 	Scene::createSkybox("textures/Chelsea_Stairs_3k.hdr", ".hdr");
 	
 	Framebuffer hdr;
@@ -577,11 +560,6 @@ int main()
 
 		model.clear();
 
-		/*glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
-		ds.draw(*camera, Scene::sceneObjects);*/
-
-		/*glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
-		ssao.drawSSAO(*camera, Scene::sceneObjects);*/
 
 		fbDebug1.draw(hdr.ssao->gBuffer->gNormal);
 		fbDebug2.draw(hdr.ssao->gBuffer->gColorSpec);

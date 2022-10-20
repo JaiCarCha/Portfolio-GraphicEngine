@@ -10,18 +10,7 @@ public:
 	{
 		x /= 2;
 		y /= 2;
-		// Without tangents
-		//std::vector<float> vertOld = {
-		//	// x, y, z, n1, n2, n3, u, v
-		//	-x, -y, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f,
-		//	x, -y, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f,
-		//	x, y, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f,
-		//	x, y, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f,
-		//	-x, y, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
-		//	-x, -y, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f
-		//};
 
-		// With tangents
 		std::vector<float> vert = {
 			// x, y, z, n1, n2, n3, u, v, t1, t2, t3
 			-x, -y, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f,
@@ -41,46 +30,6 @@ public:
 		x /= 2;
 		y /= 2;
 		z /= 2;
-
-		//std::vector<float> vert = {
-		//	//x, y, z, n1, n2, n3, u, v
-		//	-x, -y, -z, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f,
-		//	x, -y, -z, 0.0f, 0.0f, -1.0f, 0.0f, 1.0f,
-		//	x, y, -z, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f,
-		//	x, y, -z, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f,
-		//	-x, y, -z, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f,
-		//	-x, -y, -z, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f,
-		//	x, y, z, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f,
-		//	x, -y, z, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f,
-		//	-x, -y, z, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f,
-		//	-x, -y, z, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f,
-		//	-x, y, z, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
-		//	x, y, z, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f,
-		//	-x, -y, -z, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
-		//	-x, y, -z, -1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
-		//	-x, y, z, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
-		//	-x, y, z, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
-		//	-x, -y, z, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
-		//	-x, -y, -z, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
-		//	x, y, z, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
-		//	x, y, -z, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
-		//	x, -y, -z, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
-		//	x, -y, -z, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
-		//	x, -y, z, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
-		//	x, y, z, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
-		//	x, -y, z, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f,
-		//	x, -y, -z, 0.0f, -1.0f, 0.0f, 1.0f, 1.0f,
-		//	-x, -y, -z, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f,
-		//	-x, -y, -z, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f,
-		//	-x, -y, z, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f,
-		//	x, -y, z, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f,
-		//	-x, y, -z, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f,
-		//	x, y, -z, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
-		//	x, y, z, 0.0f, 1.0f, 0.0f, 1.0f, 1.0f,
-		//	x, y, z, 0.0f, 1.0f, 0.0f, 1.0f, 1.0f,
-		//	-x, y, z, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f,
-		//	-x, y, -z, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f
-		//};
 
 		std::vector<float> vert = {
 			//x, y, z, n1, n2, n3, u, v, t1, t2, t3
@@ -195,9 +144,7 @@ public:
 				float ty = 0;
 				float tz = zt;
 
-				/*glm::vec3 t(tx, ty, tz);
-				t = glm::normalize(t - n * glm::dot(t, n));*/
-				float d = glm::dot(glm::vec3(nx, ny, nz), glm::vec3(tx, ty, tz));
+				//float d = glm::dot(glm::vec3(nx, ny, nz), glm::vec3(tx, ty, tz));
 
 				vertices.push_back(tx);
 				vertices.push_back(ty);

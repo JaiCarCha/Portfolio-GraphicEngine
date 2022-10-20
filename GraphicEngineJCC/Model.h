@@ -2,16 +2,11 @@
 #define MODEL_H
 
 #include "DrawableObject.h"
-
 #include <stb_image.h>
-
 #include "assimp/Importer.hpp"
 #include "assimp/scene.h"
 #include "assimp/postprocess.h"
-
-//#include "Shader.h"
 #include "Mesh.h"
-//#include <vector>
 
 class Model : virtual public DrawableObject
 {
@@ -129,7 +124,6 @@ private:
 
 		if (mesh->mMaterialIndex >= 0) {
 			aiMaterial *material = scene->mMaterials[mesh->mMaterialIndex];
-			//auto materialName = material->GetName();
 			vector<Texture> diffuse = loadMaterialTextures(material, aiTextureType_DIFFUSE, "texture_diffuse");
 			vector<Texture> base = loadMaterialTextures(material, aiTextureType_BASE_COLOR, "texture_base");
 			vector<Texture> specular = loadMaterialTextures(material, aiTextureType_SPECULAR, "texture_specular");
@@ -144,6 +138,7 @@ private:
 			textures.insert(textures.end(), normal.begin(), normal.end());
 			textures.insert(textures.end(), roughness.begin(), roughness.end());
 			textures.insert(textures.end(), ao.begin(), ao.end());
+
 		}
 
 		if(nInstances > 1) return Mesh(vertices, indices, textures, glm::vec3(1.f), nInstances, instModels);
@@ -176,8 +171,6 @@ private:
 			{
 				Texture tex(path.C_Str(), typeName);
 
-				//tex.path = path.C_Str();
-				//tex.type = typeName;
 				textures.push_back(tex);
 				loaded_textures.push_back(tex);
 			}

@@ -1,0 +1,22 @@
+Models:
+1964.88 Armor for Man and Horse made by Cleveland Museum of Art: https://sketchfab.com/3d-models/196488-armor-for-man-and-horse-faca2ad557f64809b598c3a646a8804f
+CC0 Public Domain
+
+Canon AT-1 Retro Camera made by AleixoAlonso: https://sketchfab.com/3d-models/canon-at-1-retro-camera-9de66868d0f240e985da00c9480bfc82
+CC Atribution
+
+Vintage Television - Panasonic TR-555 made by SilkevdSmissen: https://sketchfab.com/3d-models/vintage-television-panasonic-tr-555-780fac0ec94e450eb5cb54348fc2933e
+CC Atribution-NonCommercial-NoDerivs
+
+Sword made by Vanuartw: https://sketchfab.com/3d-models/sword-618f2b9300d647dcbd4920b0a76458aa
+CC Atribution
+
+HDR images: http://www.hdrlabs.com/sibl/archive.html
+CC Atribution-NonCommercial-ShareAlike 3.0
+
+Libraries:
+GLM (OpenGL Mathematics): MIT License
+Assimp (Open Asset Import Library): BSD License
+GLFW: Open-Source License
+STB: MIT License
+
